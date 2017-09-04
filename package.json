@@ -1,0 +1,29 @@
+{
+  "name": "oawidget-cli",
+  "version": "0.0.1",
+  "description": "基于san(MVVM framework)的组件库cli工具",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "oawidget": "./lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/X-Jray/oawidget-cli.git"
+  },
+  "keywords": [
+    "oawidget-cli",
+    "san-component-cli"
+  ],
+  "author": "X-Jray",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/X-Jray/oawidget-cli/issues"
+  },
+  "homepage": "https://github.com/X-Jray/oawidget-cli#readme",
+  "dependencies": {
+    "commander": "^2.11.0"
+  }
+}
