@@ -2,12 +2,11 @@
   "name": "oawidget-cli",
   "version": "0.0.1",
   "description": "基于san(MVVM framework)的组件库cli工具",
-  "main": "./lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "oawidget": "./lib/index.js"
+    "oawidget": "bin/oawidget"
   },
   "repository": {
     "type": "git",
