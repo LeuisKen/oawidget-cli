@@ -2,11 +2,18 @@
 
 var program = require('commander');
 
+var create = require('../lib/create');
+var preview = require('../lib/preview');
+var check = require('../lib/check');
+var build = require('../lib/build');
+var publish = require('../lib/publish');
+
 program
     .version('0.0.1')
-    .option('-c, --create <component-name>', '创建项目脚手架')
-    .option('-v, --view', '组件效果预览')
-    .option('-t, --test', '组件规范检查')
-    .option('-b, --build', '组件打包构建')
-    .option('-p, --publish', '组件发布上线')
+    .description('基于san(MVVM framework)的组件库cli工具')
+    .option('-c, --create <component-name>', '创建项目脚手架', create)
+    .option('-v, --view <component-name>', '组件效果预览', preview)
+    .option('-t, --test <component-name>', '组件规范检查', check)
+    .option('-b, --build <component-name>', '组件打包构建', build)
+    .option('-p, --publish <component-name>', '组件发布上线', publish)
     .parse(process.argv);
