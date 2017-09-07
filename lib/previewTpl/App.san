@@ -1,0 +1,17 @@
+<template>
+    <section>
+        <${cmptTagName} props="${cmptSchemaObj}"></${cmptTagName}>
+    </section>
+</template>
+<script type="text/javascript">
+import san from 'san';
+import oapWidgetSanWraper from 'oap-widget-san-wraper';
+
+import ${cmptTagName} from '../src/${cmptTagName}';
+export default {
+    components: {
+        '${cmptTagName}': oapWidgetSanWraper(san, ${cmptName}.widget)
+    }
+};
+</script>
+<style type="stylus"></style>

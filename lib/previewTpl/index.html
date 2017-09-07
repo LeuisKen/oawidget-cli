@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <title>oawidget-cli预览页</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="oawidget-cli预览页">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" type="image/ico" href="/static/favicon.ico" />
+    <style>
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+hr {
+    margin: 0;
+    padding: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+    </style>
+    <script type="text/javascript">
+    function fixAutoResetRemBug() {
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 20 + 'px';
+        setTimeout(function () {
+            var oDiv = document.createElement('div');
+            oDiv.style.width = '100%';
+            document.body.appendChild(oDiv);
+            var bDiv = document.createElement('div');
+            bDiv.style.width = '20rem';
+            document.body.appendChild(bDiv);
+            
+            var rfs = document.documentElement.clientWidth / 20;
+            document.documentElement.style.fontSize = oDiv.clientWidth / bDiv.clientWidth * rfs + 'px';
+            document.body.removeChild(oDiv);
+            document.body.removeChild(bDiv);
+        }, 0);
+    }
+    </script>
+    <script src="//apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+    <script src="//s.bdstatic.com/common/openjs/openBox.js"></script>
+    <script src="//b.bdstatic.com/searchbox/icms/searchbox/js/common/openjs/shareconfig.min.js"></script>
+    <script src="//s.bdstatic.com/common/openjs/aio.js"></script>
+</head>
+<body>
+    <script type="text/javascript">    
+    fixAutoResetRemBug();
+    window.onresize = function(){
+        fixAutoResetRemBug();
+    }
+    </script>
+    <div id="app"></div>
+</body>
+</html>
