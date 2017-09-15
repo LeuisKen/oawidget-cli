@@ -1,6 +1,6 @@
 <template>
     <section>
-        <${cmptTagName} props="${cmptSchemaObj}"></${cmptTagName}>
+        <${cmptTagName} props="{{props}}"></${cmptTagName}>
     </section>
 </template>
 <script type="text/javascript">
@@ -9,6 +9,13 @@ import oapWidgetSanWraper from 'oap-widget-san-wraper';
 
 import ${cmptTagName} from '../src/${cmptTagName}';
 export default {
+    initData() {
+        return {
+            /* TO BE REPLACED */
+            props: {name: 'oawidget'}
+            /* TO BE REPLACED */
+        }
+    },
     components: {
         '${cmptTagName}': oapWidgetSanWraper(san, ${cmptName}.widget)
     }
