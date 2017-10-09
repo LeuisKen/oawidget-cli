@@ -3,17 +3,17 @@
 var program = require('commander');
 
 var create = require('../lib/create');
-var preview = require('../lib/preview');
-var check = require('../lib/check');
+var view = require('../lib/view');
+var test = require('../lib/test');
 var build = require('../lib/build');
 var publish = require('../lib/publish');
 
 program
     .version('0.0.1')
-    .description('基于san(MVVM framework)的组件库cli工具')
-    .option('-c, --create <component-name>', '创建项目脚手架', create)
-    .option('-v, --view <component-name>', '组件效果预览', preview)
-    .option('-t, --test <component-name>', '组件规范检查', check)
+    .description('基于san(MVVM framework)的组件库CLI工具')
+    .option('-c, --create <component-name>', '创建组件开发脚手架', create)
+    .option('-v, --view <component-name>', '组件开发效果预览', view)
+    .option('-t, --test <component-name>', '组件配置规范检查', test)
     .option('-b, --build <component-name>', '组件打包构建', build)
-    .option('-p, --publish <component-name>', '组件发布上线', publish)
+    .option('-p, --publish <component-name>', '组件发布', publish)
     .parse(process.argv);
