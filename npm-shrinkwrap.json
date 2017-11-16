@@ -1,0 +1,462 @@
+{
+  "name": "oawidget-cli",
+  "version": "0.0.1",
+  "dependencies": {
+    "ansi-regex": {
+      "version": "2.1.1",
+      "from": "ansi-regex@>=2.0.0 <3.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/ansi-regex/-/ansi-regex-2.1.1.tgz"
+    },
+    "ansi-styles": {
+      "version": "2.2.1",
+      "from": "ansi-styles@>=2.2.1 <3.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/ansi-styles/-/ansi-styles-2.2.1.tgz"
+    },
+    "async": {
+      "version": "0.9.2",
+      "from": "async@>=0.9.0 <0.10.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/async/-/async-0.9.2.tgz"
+    },
+    "babel-code-frame": {
+      "version": "6.26.0",
+      "from": "babel-code-frame@>=6.26.0 <7.0.0",
+      "resolved": "http://pnpm.baidu.com/babel-code-frame/-/babel-code-frame-6.26.0.tgz",
+      "dependencies": {
+        "chalk": {
+          "version": "1.1.3",
+          "from": "chalk@>=1.1.3 <2.0.0",
+          "resolved": "http://bj.bcebos.com/npm-registry/chalk/-/chalk-1.1.3.tgz"
+        }
+      }
+    },
+    "babel-core": {
+      "version": "6.26.0",
+      "from": "babel-core@>=6.26.0 <7.0.0",
+      "resolved": "http://pnpm.baidu.com/babel-core/-/babel-core-6.26.0.tgz"
+    },
+    "babel-generator": {
+      "version": "6.26.0",
+      "from": "babel-generator@>=6.26.0 <7.0.0",
+      "resolved": "http://pnpm.baidu.com/babel-generator/-/babel-generator-6.26.0.tgz"
+    },
+    "babel-helpers": {
+      "version": "6.24.1",
+      "from": "babel-helpers@>=6.24.1 <7.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/babel-helpers/-/babel-helpers-6.24.1.tgz"
+    },
+    "babel-messages": {
+      "version": "6.23.0",
+      "from": "babel-messages@>=6.23.0 <7.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/babel-messages/-/babel-messages-6.23.0.tgz"
+    },
+    "babel-register": {
+      "version": "6.26.0",
+      "from": "babel-register@>=6.26.0 <7.0.0",
+      "resolved": "http://pnpm.baidu.com/babel-register/-/babel-register-6.26.0.tgz"
+    },
+    "babel-runtime": {
+      "version": "6.26.0",
+      "from": "babel-runtime@>=6.26.0 <7.0.0",
+      "resolved": "http://pnpm.baidu.com/babel-runtime/-/babel-runtime-6.26.0.tgz"
+    },
+    "babel-template": {
+      "version": "6.26.0",
+      "from": "babel-template@>=6.26.0 <7.0.0",
+      "resolved": "http://pnpm.baidu.com/babel-template/-/babel-template-6.26.0.tgz"
+    },
+    "babel-traverse": {
+      "version": "6.26.0",
+      "from": "babel-traverse@>=6.26.0 <7.0.0",
+      "resolved": "http://pnpm.baidu.com/babel-traverse/-/babel-traverse-6.26.0.tgz"
+    },
+    "babel-types": {
+      "version": "6.26.0",
+      "from": "babel-types@>=6.26.0 <7.0.0",
+      "resolved": "http://pnpm.baidu.com/babel-types/-/babel-types-6.26.0.tgz"
+    },
+    "babylon": {
+      "version": "6.18.0",
+      "from": "babylon@>=6.18.0 <7.0.0",
+      "resolved": "http://pnpm.baidu.com/babylon/-/babylon-6.18.0.tgz"
+    },
+    "balanced-match": {
+      "version": "1.0.0",
+      "from": "balanced-match@>=1.0.0 <2.0.0",
+      "resolved": "http://pnpm.baidu.com/balanced-match/-/balanced-match-1.0.0.tgz"
+    },
+    "brace-expansion": {
+      "version": "1.1.8",
+      "from": "brace-expansion@>=1.1.7 <2.0.0",
+      "resolved": "http://pnpm.baidu.com/brace-expansion/-/brace-expansion-1.1.8.tgz"
+    },
+    "chalk": {
+      "version": "2.3.0",
+      "from": "chalk@>=2.1.0 <3.0.0",
+      "resolved": "http://pnpm.baidu.com/chalk/-/chalk-2.3.0.tgz",
+      "dependencies": {
+        "ansi-styles": {
+          "version": "3.2.0",
+          "from": "ansi-styles@>=3.1.0 <4.0.0",
+          "resolved": "https://registry.npmjs.org/ansi-styles/-/ansi-styles-3.2.0.tgz"
+        },
+        "supports-color": {
+          "version": "4.5.0",
+          "from": "supports-color@>=4.0.0 <5.0.0",
+          "resolved": "http://pnpm.baidu.com/supports-color/-/supports-color-4.5.0.tgz"
+        }
+      }
+    },
+    "color-convert": {
+      "version": "1.9.1",
+      "from": "color-convert@>=1.9.0 <2.0.0",
+      "resolved": "http://pnpm.baidu.com/color-convert/-/color-convert-1.9.1.tgz"
+    },
+    "color-name": {
+      "version": "1.1.3",
+      "from": "color-name@>=1.1.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/color-name/-/color-name-1.1.3.tgz"
+    },
+    "colors": {
+      "version": "1.1.2",
+      "from": "colors@>=1.1.2 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/colors/-/colors-1.1.2.tgz"
+    },
+    "commander": {
+      "version": "2.11.0",
+      "from": "commander@>=2.11.0 <2.12.0",
+      "resolved": "https://registry.npmjs.org/commander/-/commander-2.11.0.tgz"
+    },
+    "concat-map": {
+      "version": "0.0.1",
+      "from": "concat-map@0.0.1",
+      "resolved": "http://bj.bcebos.com/npm-registry/concat-map/-/concat-map-0.0.1.tgz"
+    },
+    "convert-source-map": {
+      "version": "1.5.0",
+      "from": "convert-source-map@>=1.1.0 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/convert-source-map/-/convert-source-map-1.5.0.tgz"
+    },
+    "core-js": {
+      "version": "2.5.1",
+      "from": "core-js@>=2.5.0 <3.0.0",
+      "resolved": "http://pnpm.baidu.com/core-js/-/core-js-2.5.1.tgz"
+    },
+    "cycle": {
+      "version": "1.0.3",
+      "from": "cycle@>=1.0.0 <1.1.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/cycle/-/cycle-1.0.3.tgz"
+    },
+    "debug": {
+      "version": "2.6.9",
+      "from": "debug@>=2.6.8 <3.0.0",
+      "resolved": "http://pnpm.baidu.com/debug/-/debug-2.6.9.tgz"
+    },
+    "deep-equal": {
+      "version": "0.2.2",
+      "from": "deep-equal@>=0.2.1 <0.3.0",
+      "resolved": "http://pnpm.baidu.com/deep-equal/-/deep-equal-0.2.2.tgz"
+    },
+    "detect-indent": {
+      "version": "4.0.0",
+      "from": "detect-indent@>=4.0.0 <5.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/detect-indent/-/detect-indent-4.0.0.tgz"
+    },
+    "escape-string-regexp": {
+      "version": "1.0.5",
+      "from": "escape-string-regexp@>=1.0.2 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz"
+    },
+    "esutils": {
+      "version": "2.0.2",
+      "from": "esutils@>=2.0.2 <3.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/esutils/-/esutils-2.0.2.tgz"
+    },
+    "eyes": {
+      "version": "0.1.8",
+      "from": "eyes@>=0.1.0 <0.2.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/eyes/-/eyes-0.1.8.tgz"
+    },
+    "fs.realpath": {
+      "version": "1.0.0",
+      "from": "fs.realpath@>=1.0.0 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/fs.realpath/-/fs.realpath-1.0.0.tgz"
+    },
+    "glob": {
+      "version": "7.1.2",
+      "from": "glob@>=7.0.5 <8.0.0",
+      "resolved": "https://registry.npmjs.org/glob/-/glob-7.1.2.tgz"
+    },
+    "globals": {
+      "version": "9.18.0",
+      "from": "globals@>=9.0.0 <10.0.0",
+      "resolved": "http://pnpm.baidu.com/globals/-/globals-9.18.0.tgz"
+    },
+    "has-ansi": {
+      "version": "2.0.0",
+      "from": "has-ansi@>=2.0.0 <3.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/has-ansi/-/has-ansi-2.0.0.tgz"
+    },
+    "has-flag": {
+      "version": "2.0.0",
+      "from": "has-flag@>=2.0.0 <3.0.0",
+      "resolved": "https://registry.npmjs.org/has-flag/-/has-flag-2.0.0.tgz"
+    },
+    "home-or-tmp": {
+      "version": "2.0.0",
+      "from": "home-or-tmp@>=2.0.0 <3.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/home-or-tmp/-/home-or-tmp-2.0.0.tgz"
+    },
+    "i": {
+      "version": "0.3.6",
+      "from": "i@>=0.3.0 <0.4.0",
+      "resolved": "http://pnpm.baidu.com/i/-/i-0.3.6.tgz"
+    },
+    "inflight": {
+      "version": "1.0.6",
+      "from": "inflight@>=1.0.4 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/inflight/-/inflight-1.0.6.tgz"
+    },
+    "inherits": {
+      "version": "2.0.3",
+      "from": "inherits@>=2.0.0 <3.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/inherits/-/inherits-2.0.3.tgz"
+    },
+    "interpret": {
+      "version": "1.0.4",
+      "from": "interpret@>=1.0.0 <2.0.0",
+      "resolved": "http://pnpm.baidu.com/interpret/-/interpret-1.0.4.tgz"
+    },
+    "invariant": {
+      "version": "2.2.2",
+      "from": "invariant@>=2.2.0 <3.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/invariant/-/invariant-2.2.2.tgz"
+    },
+    "is-finite": {
+      "version": "1.0.2",
+      "from": "is-finite@>=1.0.0 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/is-finite/-/is-finite-1.0.2.tgz"
+    },
+    "isstream": {
+      "version": "0.1.2",
+      "from": "isstream@>=0.1.0 <0.2.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/isstream/-/isstream-0.1.2.tgz"
+    },
+    "js-tokens": {
+      "version": "3.0.2",
+      "from": "js-tokens@>=3.0.0 <4.0.0",
+      "resolved": "http://pnpm.baidu.com/js-tokens/-/js-tokens-3.0.2.tgz"
+    },
+    "jsesc": {
+      "version": "1.3.0",
+      "from": "jsesc@>=1.3.0 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/jsesc/-/jsesc-1.3.0.tgz"
+    },
+    "json5": {
+      "version": "0.5.1",
+      "from": "json5@>=0.5.0 <0.6.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/json5/-/json5-0.5.1.tgz"
+    },
+    "lodash": {
+      "version": "4.17.4",
+      "from": "lodash@>=4.2.0 <5.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/lodash/-/lodash-4.17.4.tgz"
+    },
+    "loose-envify": {
+      "version": "1.3.1",
+      "from": "loose-envify@>=1.0.0 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/loose-envify/-/loose-envify-1.3.1.tgz"
+    },
+    "minimatch": {
+      "version": "3.0.4",
+      "from": "minimatch@>=3.0.2 <4.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/minimatch/-/minimatch-3.0.4.tgz"
+    },
+    "minimist": {
+      "version": "0.0.8",
+      "from": "minimist@0.0.8",
+      "resolved": "http://bj.bcebos.com/npm-registry/minimist/-/minimist-0.0.8.tgz"
+    },
+    "mkdirp": {
+      "version": "0.5.1",
+      "from": "mkdirp@>=0.5.1 <0.6.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/mkdirp/-/mkdirp-0.5.1.tgz"
+    },
+    "ms": {
+      "version": "2.0.0",
+      "from": "ms@2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/ms/-/ms-2.0.0.tgz"
+    },
+    "mute-stream": {
+      "version": "0.0.7",
+      "from": "mute-stream@>=0.0.4 <0.1.0",
+      "resolved": "https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.7.tgz"
+    },
+    "ncp": {
+      "version": "1.0.1",
+      "from": "ncp@>=1.0.0 <1.1.0",
+      "resolved": "http://pnpm.baidu.com/ncp/-/ncp-1.0.1.tgz"
+    },
+    "number-is-nan": {
+      "version": "1.0.1",
+      "from": "number-is-nan@>=1.0.0 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/number-is-nan/-/number-is-nan-1.0.1.tgz"
+    },
+    "once": {
+      "version": "1.4.0",
+      "from": "once@>=1.3.0 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/once/-/once-1.4.0.tgz"
+    },
+    "os-homedir": {
+      "version": "1.0.2",
+      "from": "os-homedir@>=1.0.0 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/os-homedir/-/os-homedir-1.0.2.tgz"
+    },
+    "os-tmpdir": {
+      "version": "1.0.2",
+      "from": "os-tmpdir@>=1.0.1 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/os-tmpdir/-/os-tmpdir-1.0.2.tgz"
+    },
+    "path-is-absolute": {
+      "version": "1.0.1",
+      "from": "path-is-absolute@>=1.0.0 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/path-is-absolute/-/path-is-absolute-1.0.1.tgz"
+    },
+    "path-parse": {
+      "version": "1.0.5",
+      "from": "path-parse@>=1.0.5 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/path-parse/-/path-parse-1.0.5.tgz"
+    },
+    "pkginfo": {
+      "version": "0.4.1",
+      "from": "pkginfo@>=0.0.0 <1.0.0",
+      "resolved": "http://pnpm.baidu.com/pkginfo/-/pkginfo-0.4.1.tgz"
+    },
+    "private": {
+      "version": "0.1.8",
+      "from": "private@>=0.1.7 <0.2.0",
+      "resolved": "http://pnpm.baidu.com/private/-/private-0.1.8.tgz"
+    },
+    "progress": {
+      "version": "2.0.0",
+      "from": "progress@>=2.0.0 <3.0.0",
+      "resolved": "http://pnpm.baidu.com/progress/-/progress-2.0.0.tgz"
+    },
+    "prompt": {
+      "version": "1.0.0",
+      "from": "prompt@>=1.0.0 <2.0.0",
+      "resolved": "http://pnpm.baidu.com/prompt/-/prompt-1.0.0.tgz"
+    },
+    "read": {
+      "version": "1.0.7",
+      "from": "read@>=1.0.0 <1.1.0",
+      "resolved": "https://registry.npmjs.org/read/-/read-1.0.7.tgz"
+    },
+    "rechoir": {
+      "version": "0.6.2",
+      "from": "rechoir@>=0.6.2 <0.7.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/rechoir/-/rechoir-0.6.2.tgz"
+    },
+    "regenerator-runtime": {
+      "version": "0.11.0",
+      "from": "regenerator-runtime@>=0.11.0 <0.12.0",
+      "resolved": "http://pnpm.baidu.com/regenerator-runtime/-/regenerator-runtime-0.11.0.tgz"
+    },
+    "repeating": {
+      "version": "2.0.1",
+      "from": "repeating@>=2.0.0 <3.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/repeating/-/repeating-2.0.1.tgz"
+    },
+    "resolve": {
+      "version": "1.5.0",
+      "from": "resolve@>=1.1.6 <2.0.0",
+      "resolved": "http://pnpm.baidu.com/resolve/-/resolve-1.5.0.tgz"
+    },
+    "revalidator": {
+      "version": "0.1.8",
+      "from": "revalidator@>=0.1.0 <0.2.0",
+      "resolved": "http://pnpm.baidu.com/revalidator/-/revalidator-0.1.8.tgz"
+    },
+    "rimraf": {
+      "version": "2.6.2",
+      "from": "rimraf@>=2.0.0 <3.0.0",
+      "resolved": "http://pnpm.baidu.com/rimraf/-/rimraf-2.6.2.tgz"
+    },
+    "shelljs": {
+      "version": "0.7.8",
+      "from": "shelljs@>=0.7.8 <0.8.0",
+      "resolved": "https://registry.npmjs.org/shelljs/-/shelljs-0.7.8.tgz"
+    },
+    "slash": {
+      "version": "1.0.0",
+      "from": "slash@>=1.0.0 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/slash/-/slash-1.0.0.tgz"
+    },
+    "source-map": {
+      "version": "0.5.7",
+      "from": "source-map@>=0.5.6 <0.6.0",
+      "resolved": "http://pnpm.baidu.com/source-map/-/source-map-0.5.7.tgz"
+    },
+    "source-map-support": {
+      "version": "0.4.18",
+      "from": "source-map-support@>=0.4.15 <0.5.0",
+      "resolved": "http://pnpm.baidu.com/source-map-support/-/source-map-support-0.4.18.tgz"
+    },
+    "stack-trace": {
+      "version": "0.0.10",
+      "from": "stack-trace@>=0.0.0 <0.1.0",
+      "resolved": "http://pnpm.baidu.com/stack-trace/-/stack-trace-0.0.10.tgz"
+    },
+    "strip-ansi": {
+      "version": "3.0.1",
+      "from": "strip-ansi@>=3.0.0 <4.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/strip-ansi/-/strip-ansi-3.0.1.tgz"
+    },
+    "supports-color": {
+      "version": "2.0.0",
+      "from": "supports-color@>=2.0.0 <3.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/supports-color/-/supports-color-2.0.0.tgz"
+    },
+    "to-fast-properties": {
+      "version": "1.0.3",
+      "from": "to-fast-properties@>=1.0.1 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/to-fast-properties/-/to-fast-properties-1.0.3.tgz"
+    },
+    "trim-right": {
+      "version": "1.0.1",
+      "from": "trim-right@>=1.0.1 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/trim-right/-/trim-right-1.0.1.tgz"
+    },
+    "utile": {
+      "version": "0.3.0",
+      "from": "utile@>=0.3.0 <0.4.0",
+      "resolved": "http://pnpm.baidu.com/utile/-/utile-0.3.0.tgz"
+    },
+    "winston": {
+      "version": "2.1.1",
+      "from": "winston@>=2.1.0 <2.2.0",
+      "resolved": "http://pnpm.baidu.com/winston/-/winston-2.1.1.tgz",
+      "dependencies": {
+        "async": {
+          "version": "1.0.0",
+          "from": "async@>=1.0.0 <1.1.0",
+          "resolved": "http://bj.bcebos.com/npm-registry/async/-/async-1.0.0.tgz"
+        },
+        "colors": {
+          "version": "1.0.3",
+          "from": "colors@>=1.0.0 <1.1.0",
+          "resolved": "http://bj.bcebos.com/npm-registry/colors/-/colors-1.0.3.tgz"
+        },
+        "pkginfo": {
+          "version": "0.3.1",
+          "from": "pkginfo@>=0.3.0 <0.4.0",
+          "resolved": "http://pnpm.baidu.com/pkginfo/-/pkginfo-0.3.1.tgz"
+        }
+      }
+    },
+    "wrappy": {
+      "version": "1.0.2",
+      "from": "wrappy@>=1.0.0 <2.0.0",
+      "resolved": "http://bj.bcebos.com/npm-registry/wrappy/-/wrappy-1.0.2.tgz"
+    }
+  }
+}
