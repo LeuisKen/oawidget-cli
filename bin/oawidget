@@ -12,8 +12,8 @@ program
     .version('0.0.1')
     .description('基于san(MVVM framework)的组件库CLI工具')
     .option('-c, --create <component-name>', '创建组件开发脚手架', create)
-    .option('-v, --view <component-name>', '组件开发效果预览', view)
-    .option('-t, --test <component-name>', '组件配置规范检查', test)
-    .option('-b, --build <component-name>', '组件打包构建', build)
-    .option('-p, --publish <component-name>', '组件发布', publish)
+    .option('-v, --view', '组件开发效果预览', view)
+    .option('-t, --test', '组件配置规范检查', test)
+    .option('-b, --build', '组件打包构建', build)
+    .option('-p, --publish', '组件发布', publish)
     .parse(process.argv);

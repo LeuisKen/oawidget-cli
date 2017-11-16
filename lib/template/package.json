@@ -1,6 +1,9 @@
 {
   "name": "oap-widget",
   "description": "手百JadyTeam运营平台运营组件代码仓库",
+  "config": {
+    "cmptName": "${cmptName}"
+  },
   "scripts": {
     "dev": "cross-env NODE_ENV=dev node build/server.js",
     "preview": "cross-env NODE_ENV=preview node build/server.js",

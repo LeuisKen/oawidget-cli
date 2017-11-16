@@ -26,9 +26,11 @@
     "babel-register": "^6.26.0",
     "chalk": "^2.1.0",
     "commander": "^2.11.0",
+    "etpl": "^3.2.0",
     "progress": "^2.0.0",
     "prompt": "^1.0.0",
-    "shelljs": "^0.7.8"
+    "shelljs": "^0.7.8",
+    "superagent": "^3.8.1"
   },
   "preferGlobal": true
 }

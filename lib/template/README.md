@@ -23,8 +23,8 @@ Options:
 ### 创建项目脚手架
 
 ```
-// 组件名命名规范 [YourName]/[common/which activity][cmptName], 如下例
-oawidget-cli -c zxuanjian/CommonButton
+// 组件名命名规范 [YourName]_[common/which activity][cmptName], 如下例
+oawidget-cli -c Zxuanjian_CommonButton
 ```
 
 脚手架目录结构
@@ -66,13 +66,13 @@ __ package.json
 ### 介入开发
 
 ```
-// cd [YourName]/[common/whichactivity], 如下例
-cd zxuanjian/CommonButton
+// cd [YourName]_[common/whichactivity][cmptName], 如下例
+cd Zxuanjian_CommonButton
 // 如果你在用sublime
 subl ./
 ```
 
-请确保在coding前，你已经对你要开发的组件有了完整的设计思路，这样，你就可以写 `[YourName]/[common/whichactivity].eidtor.js`了，配置文件里设置暴露给平台供用户配置的属性
+请确保在coding前，你已经对你要开发的组件有了完整的设计思路，这样，你就可以写 `Zxuanjian_CommonButton.eidtor.js`了，配置文件里设置暴露给平台供用户配置的属性
 
 支持用户配置的数据类型：
 
@@ -95,7 +95,7 @@ subl ./
 ### 开发调试
 
 ```
-oawidget-cli -v zxuanjian/CommonButton
+oawidget-cli -v Zxuanjian_CommonButton
 ```
 
 自动完成配置注入和组件引入，打开一个浏览器窗口，供开发者开发调试。
@@ -106,7 +106,7 @@ oawidget-cli -v zxuanjian/CommonButton
 完成组件开发，准备提交到平台仓库前，执行检查命令，测试下配置文件的有效性吧！
 
 ```
-oawidget-cli -t zxuanjian/CommonButton
+oawidget-cli -t Zxuanjian_CommonButton
 ```
 
 ### 打包构建
@@ -114,7 +114,7 @@ oawidget-cli -t zxuanjian/CommonButton
 配置文件有效性已测试通过，马上就要大功告成了，记得执行构建命令，打包编译你的开发成果.
 
 ```
-oawidget-cli -b zxuanjian/CommonButton
+oawidget-cli -b Zxuanjian_CommonButton
 ```
 
 ### 上传组件到平台组件中心
@@ -122,5 +122,5 @@ oawidget-cli -b zxuanjian/CommonButton
 执行这个命令，你的组件就进入了平台组件中心。
 
 ```
-oawidget-cli -p zxuanjian/CommonButton
+oawidget-cli -p Zxuanjian_CommonButton
 ```
