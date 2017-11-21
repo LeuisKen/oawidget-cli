@@ -7,13 +7,14 @@ var view = require('../lib/view');
 var test = require('../lib/test');
 var build = require('../lib/build');
 var publish = require('../lib/publish');
+var version = require('../package.json').version;
 
 program
-    .version('0.0.1')
-    .description('基于san(MVVM framework)的组件库CLI工具')
-    .option('-c, --create <component-name>', '创建组件开发脚手架', create)
+    .version(version)
+    .description('运营活动平台化-组件库CLI工具')
+    .option('-c, --create <component-name>', '创建项目脚手架', create)
     .option('-v, --view', '组件开发效果预览', view)
     .option('-t, --test', '组件配置规范检查', test)
     .option('-b, --build', '组件打包构建', build)
-    .option('-p, --publish', '组件发布', publish)
+    .option('-p, --publish', '组件发布上线', publish)
     .parse(process.argv);

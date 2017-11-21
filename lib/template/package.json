@@ -1,6 +1,6 @@
 {
   "name": "oap-widget",
-  "description": "手百JadyTeam运营平台运营组件代码仓库",
+  "description": "运营活动平台化-组件代码库",
   "config": {
     "cmptName": "${cmptName}"
   },
@@ -11,8 +11,8 @@
     "build": "cross-env NODE_ENV=production webpack --config build/webpack.prod.conf.js",
     "test": "mocha test/**/*.test.js -t 10000 --require babel-register --require ignore-styles"
   },
-  "author": "JadyTeam",
-  "license": "ISC",
+  "author": "Jady",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "ssh://zhangxuanjian@icode.baidu.com:8235/baidu/jady/oap-widget"
