@@ -1,6 +1,6 @@
 {
   "name": "oawidget-cli",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "dependencies": {
     "ansi-regex": {
       "version": "2.1.1",
