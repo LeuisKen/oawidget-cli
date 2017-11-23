@@ -2,8 +2,4 @@ node_modules/
 npm-debug.log
 .DS_Store
 .idea/
-build/
-mock/
-preview/
-test/
 README.md
