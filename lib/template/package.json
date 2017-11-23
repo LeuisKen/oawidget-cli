@@ -1,0 +1,62 @@
+{
+  "name": "oap-widget",
+  "description": "运营活动平台化-组件代码库",
+  "config": {
+    "cmptName": "${cmptName}"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev node build/server.js",
+    "preview": "cross-env NODE_ENV=preview node build/server.js",
+    "clean": "rm -rf lib/**",
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.prod.conf.js",
+    "test": "mocha test/**/*.test.js -t 10000 --require babel-register --require ignore-styles"
+  },
+  "author": "Jady",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "ssh://zhangxuanjian@icode.baidu.com:8235/baidu/jady/oap-widget"
+  },
+  "dependencies": {
+    "@baidu/box-invoke": "^1.1.7",
+    "@baidu/oap-app-entry": "^1.0.5",
+    "fastclick": "^1.0.6",
+    "nib": "^1.1.2",
+    "oap-widget-san-wraper": "^1.0.21",
+    "lodash": "^4.17.4",
+    "lodash.tointeger": "^4.0.4",
+    "lodash.tostring": "^4.1.4",
+    "san": "^3.2.2",
+    "swiper": "^3.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "cross-env": "^5.0.5",
+    "compression-webpack-plugin": "^1.0.1",
+    "css-loader": "^0.28.7",
+    "express": "^4.15.4",
+    "file-loader": "^1.0.0",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "http-proxy-middleware": "^0.17.4",
+    "ignore-styles": "^5.0.1",
+    "json-loader": "^0.5.7",
+    "mocha": "^3.5.0",
+    "opn": "^5.1.0",
+    "postcss-loader": "^2.0.6",
+    "san-loader": "0.0.4",
+    "san-router": "^1.1.1",
+    "style-loader": "^0.18.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.5.6",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-hot-middleware": "^2.19.0"
+  }
+}

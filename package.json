@@ -1,6 +1,6 @@
 {
   "name": "oawidget-cli",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "基于san(MVVM framework)的组件库cli工具",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,6 +8,14 @@
   "bin": {
     "oawidget": "bin/oawidget"
   },
+  "files": [
+    "./bin/**",
+    "./lib/**",
+    ".gitignore",
+    "npm-shrinkwrap.json",
+    "package.json",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/X-Jray/oawidget-cli.git"
