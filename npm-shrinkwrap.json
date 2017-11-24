@@ -476,6 +476,11 @@
       "from": "safe-buffer@>=5.1.1 <5.2.0",
       "resolved": "http://pnpm.baidu.com/safe-buffer/-/safe-buffer-5.1.1.tgz"
     },
+    "san": {
+      "version": "3.2.10",
+      "from": "san@3.2.10",
+      "resolved": "http://pnpm.baidu.com/san/-/san-3.2.10.tgz"
+    },
     "shelljs": {
       "version": "0.7.8",
       "from": "shelljs@>=0.7.8 <0.8.0",
