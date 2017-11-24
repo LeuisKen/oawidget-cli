@@ -18,15 +18,13 @@
     "url": "ssh://zhangxuanjian@icode.baidu.com:8235/baidu/jady/oap-widget"
   },
   "dependencies": {
-    "@baidu/box-invoke": "^1.1.7",
-    "@baidu/oap-app-entry": "^1.0.5",
+    "@baidu/oap-app-entry": "^2.2.10",
     "fastclick": "^1.0.6",
-    "nib": "^1.1.2",
-    "oap-widget-san-wraper": "^1.0.21",
     "lodash": "^4.17.4",
     "lodash.tointeger": "^4.0.4",
     "lodash.tostring": "^4.1.4",
-    "san": "^3.2.2",
+    "nib": "^1.1.2",
+    "san": "^3.2.10",
     "swiper": "^3.4.2"
   },
   "devDependencies": {

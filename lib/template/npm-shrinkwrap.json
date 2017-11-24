@@ -2,31 +2,14 @@
   "name": "oap-widget",
   "dependencies": {
     "@baidu/box-invoke": {
-      "version": "1.1.7",
-      "from": "@baidu/box-invoke@latest",
-      "resolved": "http://registry.efe.tech/@baidu%2fbox-invoke/-/box-invoke-1.1.7.tgz"
+      "version": "1.1.14",
+      "from": "@baidu/box-invoke@>=1.1.14 <2.0.0",
+      "resolved": "http://registry.efe.tech/@baidu%2fbox-invoke/-/box-invoke-1.1.14.tgz"
     },
     "@baidu/oap-app-entry": {
-      "version": "1.0.13",
-      "from": "@baidu/oap-app-entry@>=1.0.5 <2.0.0",
-      "resolved": "http://registry.efe.tech/@baidu%2foap-app-entry/-/oap-app-entry-1.0.13.tgz",
-      "dependencies": {
-        "@baidu/box-invoke": {
-          "version": "1.1.14",
-          "from": "@baidu/box-invoke@>=1.1.12 <2.0.0",
-          "resolved": "http://registry.efe.tech/@baidu%2fbox-invoke/-/box-invoke-1.1.14.tgz"
-        },
-        "oap-widget-san-wraper": {
-          "version": "1.0.24",
-          "from": "oap-widget-san-wraper@>=1.0.24 <2.0.0",
-          "resolved": "http://pnpm.baidu.com/oap-widget-san-wraper/-/oap-widget-san-wraper-1.0.24.tgz"
-        },
-        "san": {
-          "version": "3.2.0",
-          "from": "san@3.2.0",
-          "resolved": "http://pnpm.baidu.com/san/-/san-3.2.0.tgz"
-        }
-      }
+      "version": "2.2.10",
+      "from": "@baidu/oap-app-entry@>=2.0.0 <3.0.0",
+      "resolved": "http://registry.efe.tech/@baidu%2foap-app-entry/-/oap-app-entry-2.2.10.tgz"
     },
     "amdefine": {
       "version": "1.0.1",
@@ -35,7 +18,7 @@
     },
     "babel-polyfill": {
       "version": "6.26.0",
-      "from": "babel-polyfill@latest",
+      "from": "babel-polyfill@>=6.23.0 <7.0.0",
       "resolved": "http://pnpm.baidu.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz",
       "dependencies": {
         "regenerator-runtime": {
@@ -67,7 +50,7 @@
     },
     "core-js": {
       "version": "2.5.1",
-      "from": "core-js@>=2.4.0 <3.0.0",
+      "from": "core-js@>=2.5.0 <3.0.0",
       "resolved": "http://pnpm.baidu.com/core-js/-/core-js-2.5.1.tgz"
     },
     "css-parse": {
@@ -140,11 +123,6 @@
       "from": "nib@latest",
       "resolved": "http://pnpm.baidu.com/nib/-/nib-1.1.2.tgz"
     },
-    "oap-widget-san-wraper": {
-      "version": "1.0.21",
-      "from": "oap-widget-san-wraper@latest",
-      "resolved": "http://pnpm.baidu.com/oap-widget-san-wraper/-/oap-widget-san-wraper-1.0.21.tgz"
-    },
     "once": {
       "version": "1.4.0",
       "from": "once@>=1.3.0 <2.0.0",
@@ -161,9 +139,9 @@
       "resolved": "http://pnpm.baidu.com/regenerator-runtime/-/regenerator-runtime-0.11.0.tgz"
     },
     "san": {
-      "version": "3.2.2",
-      "from": "san@latest",
-      "resolved": "http://pnpm.baidu.com/san/-/san-3.2.2.tgz"
+      "version": "3.2.10",
+      "from": "san@3.2.10",
+      "resolved": "http://pnpm.baidu.com/san/-/san-3.2.10.tgz"
     },
     "stylus": {
       "version": "0.54.5",
