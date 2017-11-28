@@ -7,6 +7,7 @@ var view = require('../lib/view');
 var test = require('../lib/test');
 var build = require('../lib/build');
 var publish = require('../lib/publish');
+var config = require('../lib/config');
 var version = require('../package.json').version;
 
 program
@@ -17,4 +18,6 @@ program
     .option('-t, --test', '组件配置规范检查', test)
     .option('-b, --build', '组件打包构建', build)
     .option('-p, --publish', '组件发布上线', publish)
+    .option('--config [key=value]', '修改oawidget配置项', config)
+    .option('--config list', '列出oawidget配置项', config)
     .parse(process.argv);
