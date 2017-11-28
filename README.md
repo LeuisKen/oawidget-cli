@@ -12,5 +12,7 @@
     -t, --test <component-name>     组件规范检查
     -b, --build <component-name>    组件打包构建
     -p, --publish <component-name>  组件发布上线
+    --config [key=value]            修改oawidget配置项
+    --config list                   列出oawidget配置项
     -h, --help                      output usage information
 ```
