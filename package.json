@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/X-Jray/oawidget-cli#readme",
   "dependencies": {
+    "@baidu/oap-app-entry": "^2.3.2",
     "babel-register": "^6.26.0",
     "chalk": "^2.1.0",
     "commander": "^2.11.0",

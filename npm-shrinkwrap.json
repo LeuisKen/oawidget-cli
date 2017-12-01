@@ -2,6 +2,16 @@
   "name": "oawidget-cli",
   "version": "0.1.4",
   "dependencies": {
+    "@baidu/box-invoke": {
+      "version": "1.1.15",
+      "from": "@baidu/box-invoke@>=1.1.14 <2.0.0",
+      "resolved": "http://registry.efe.tech/@baidu%2fbox-invoke/-/box-invoke-1.1.15.tgz"
+    },
+    "@baidu/oap-app-entry": {
+      "version": "2.3.2",
+      "from": "@baidu/oap-app-entry@latest",
+      "resolved": "http://registry.efe.tech/@baidu%2foap-app-entry/-/oap-app-entry-2.3.2.tgz"
+    },
     "ansi-regex": {
       "version": "2.1.1",
       "from": "ansi-regex@>=2.0.0 <3.0.0",
@@ -53,6 +63,18 @@
       "version": "6.23.0",
       "from": "babel-messages@>=6.23.0 <7.0.0",
       "resolved": "http://bj.bcebos.com/npm-registry/babel-messages/-/babel-messages-6.23.0.tgz"
+    },
+    "babel-polyfill": {
+      "version": "6.26.0",
+      "from": "babel-polyfill@>=6.26.0 <7.0.0",
+      "resolved": "http://pnpm.baidu.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz",
+      "dependencies": {
+        "regenerator-runtime": {
+          "version": "0.10.5",
+          "from": "regenerator-runtime@>=0.10.5 <0.11.0",
+          "resolved": "http://bj.bcebos.com/npm-registry/regenerator-runtime/-/regenerator-runtime-0.10.5.tgz"
+        }
+      }
     },
     "babel-register": {
       "version": "6.26.0",
