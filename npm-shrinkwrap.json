@@ -1,6 +1,6 @@
 {
   "name": "oawidget-cli",
-  "version": "0.1.5",
+  "version": "0.2.2",
   "dependencies": {
     "@baidu/box-invoke": {
       "version": "1.1.15",
